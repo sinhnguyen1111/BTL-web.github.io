@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<!-- <link rel="stylesheet" href="css/style.css"> -->
+	<link rel="stylesheet" href="css/all.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+   <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css">
+    <script src="css/jquery-3.5.1.min.js "></script>
+    <script src="css/bootstrap.min.js"></script>
+    <style>
+    	body{
+    		background-image: url('images/ảnh-nền-form.jpg');
+    		width: 100%;
+    		background-size: cover;
+    		background-attachment: fixed;
+    	}
+    	form{
+    		box-shadow: 0 0 10px gray;
+    		border-radius: 5px;
+    		width: 25%;
+    		margin:15% auto;
+
+    	}
+    	.acount>div input{
+    		border:none;
+    	}
+    	.or{
+    		width: 30px;
+    		height:30px;
+    		border-radius: 50%;
+    		background-color: green;
+    		text-align: center;
+    		line-height: 30px;
+    		margin: 10px auto;
+    	}
+    	#google input{
+    		background-color: red;
+    		margin-bottom: 20px;
+    		/*margin-top: 20px;*/
+    		color: white;
+
+    	}
+    	#facebook input{
+    		background-color: blue;
+    		color: white;
+    	}
+    </style>
+</head>
+<body>
+	<form action="index.html">
+		<div class="acount">
+			<div>
+				<label for=""><i class="fa fa-user" aria-hidden="true"></i> Username</label><br>
+				<input type="text" class="form-control" id="user"><br>
+				<span class="error" id="msg_user"></span>
+			</div>
+			<div>
+				<label for=""><i class="fa fa-unlock-alt" aria-hidden="true"></i> Password</label><br>
+				<input type="password" class="form-control" id="password">
+				<span class="error" id="msg_password"></span>
+			</div>
+			<div>
+				<input type="checkbox" name="remember">Remember Password
+				<div>Forgot Password?</div>
+			</div>
+			
+			<div>
+				<input type="submit" value="Login"  class="form-control" id="send">
+			</div>
+			<div class="or">Or</div>
+			<div id="google">
+				<input type="button" class="form-control" value="Google">
+			</div>
+			<div id="facebook">
+				<input type="button" class="form-control" value="Facebook">
+			</div>
+		</div>
+		
+		
+	</form>
+</body>
+<script src="js/index.js"></script>
+</html>
