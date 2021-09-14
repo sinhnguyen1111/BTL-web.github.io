@@ -1,18 +1,4 @@
-//Cuộn trang
-$(window).scroll(function(){
-		var top = $('html').scrollTop();
-			if(top>500)
-			{
-				$('.top').show();
-			}
-			else{
-				$('.top').hide();
-			}
-		});
-	$('.top').click(function(){
-		$('html,body').animate({
-			scrollTop:0},1000);
-	})
+
 	//validate form
 	$('#send').on('click',function(e){
 		// e.preventDefault();
@@ -21,8 +7,22 @@ $(window).scroll(function(){
 		alert('Đăng nhập thành công! Hãy đặt hàng để thưởng thức hương vị bánh cùng Tiệm bánh đại chiến.');
 
 	});
-
+	// THỰC THI MÃ SAU KHI TẢI TRANG HOÀN TẤT
 	$(document).ready(function(){
+		//Cuộn trang
+		$(window).scroll(function(){
+			if($(window).scrollTop()>800){
+				$('.top').show();
+			}
+			else{
+				$('.top').hide();
+			}
+		});
+		$('.top').click(function(){
+			$('html').animate({scrollTop:0},"slow");
+			// $(window).scrollTo(0,0);
+		});
+
 		$('#msg_user').hide();
 		$('#msg_password').hide();
 
@@ -68,5 +68,10 @@ $(window).scroll(function(){
 				$('#msg_password').css('color','green');
 			}
 		});
+
+		//add active
+		
+		
+		
 
 	});

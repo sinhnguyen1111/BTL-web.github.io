@@ -2,9 +2,9 @@
 	padding:0;
 	margin:0;
 }
-html{
+/* html{
 	scroll-behavior: smooth;
-}
+} */
 .top{
 	position: fixed;
 	bottom: 10px;
@@ -23,23 +23,21 @@ html{
 	color:gray;
 
 }
+.navbar{
+	background-color: #7d610f;
+}
 #reponsive{
 	position: relative;
 }
-#reponsive a:hover{
-	border-bottom: 2px solid #ffc107;
-
-}
-
 
 .navbar li a{
-	color:white !important;	
+	color:#e4e4e4 !important;	
 	padding:10px 15px 9px 15px !important;
 
 }
 
 .navbar li a:hover{
-	color:tomato !important;
+	color:white !important;
 }
 
 .carousel-inner img{
@@ -103,6 +101,10 @@ html{
 	border-bottom-right-radius: inherit;
 	border-bottom-left-radius: inherit;
 }
+
+.fa-shopping-cart{
+	cursor: pointer;
+}
 .combo{
 	width: 100%;
     overflow: hidden;
@@ -140,7 +142,6 @@ footer{
 	border-radius: 50%;
 	border:1px solid yellow;
 	text-align: center;
-
 }
 .footer i:hover{
 	transform: scale(1.1);
@@ -239,8 +240,6 @@ input,textarea{
 	background-image: url('../images/sinhnhatlogo.jpg');
 	width: 100%;
 	height:450px;
-	
-
 }
 .mytext{
 	text-align: center;
@@ -252,34 +251,27 @@ input,textarea{
 	width: 100%;
 }
 /*Phân trang*/
-.pagination {
-	width: 10%;
-	margin: 0 auto;
-	text-align: center;
+.pagination{
+	width: 15%;
+	margin: 10px auto;
 }
-.pagination li{
-	/*margin:10px;*/
-	border: 1px solid #ddd;
-	/*background-color: gray;*/
+.pagination > .btn{
+	border:1px solid rgba(176, 236, 168, 0.781);;
+}
+.pagination .active{
+	background-color: rgba(176, 236, 168, 0.781);
+	color: white;
+}
 
-}
-.pagination li a{
-	padding:10px;
-	color: #337ab7;
-    text-decoration: none;
-    /*background-color: #fff;*/
-}
 @media all and (min-width: 320px) and (max-width:575px){
 	.card-columns{
 		column-count: 1!important;
-
 	}
-	
 	.main_1,.main_2,.main_3,#bakery,.about,.birthday,.birthday_1,.mousse,.mincake,.cookie,.fresh{
 		padding:10px 30px;
 	}
 	.product{
-		    font-size: 14px;
+		font-size: 14px;
 	}
 }
 @media all and (min-width: 576px) and (max-width: 767px){
@@ -291,7 +283,7 @@ input,textarea{
 		padding:10px 30px;
 	}
 	.product{
-		    font-size: 15px;
+		font-size: 15px;
 	}
 }
 @media all and (min-width: 768px) and (max-width: 1024px){
@@ -306,7 +298,7 @@ input,textarea{
 		padding:10px 30px;
 	}
 	.product{
-		    font-size: 15px;
+		font-size: 15px;
 	}
 }
 @media all and (min-width: 1025px){
@@ -315,16 +307,15 @@ input,textarea{
 
 	}
 	.product{
-		    font-size: 15px;
+		font-size: 15px;
 	}
 }
 
 @media all and (min-width: 2000px){
 	.card-columns{
 		column-count: 5!important;
-
 	}
 	.product{
-		    font-size: 15px;
+		font-size: 15px;
 	}
 }
